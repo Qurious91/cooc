@@ -6,6 +6,19 @@ import { useState } from 'react';
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const scrollToSection = (id: string) => {
+  const element = document.getElementById(id);
+
+  if (element) {
+    element.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start',
+    });
+
+    setIsMenuOpen(false);
+    }
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-gray-200 bg-white/95 backdrop-blur-sm">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -18,25 +31,25 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden space-x-8 md:flex">
-            <button className="text-gray-700 hover:text-zinc-500 transition-colors">
+            <button className="text-gray-700 hover:text-zinc-500 transition-colors" onClick={() => scrollToSection('hero')}>
               홈
             </button>
-            <button className="text-gray-700 hover:text-zinc-500 transition-colors">
+            <button className="text-gray-700 hover:text-zinc-500 transition-colors" onClick={() => scrollToSection('services')}>
               서비스
             </button>
-            <button className="text-gray-700 hover:text-zinc-500 transition-colors">
+            <button className="text-gray-700 hover:text-zinc-500 transition-colors" onClick={() => scrollToSection('chefs')}>
               셰프
             </button>
-            <button className="text-gray-700 hover:text-zinc-500 transition-colors">
+            <button className="text-gray-700 hover:text-zinc-500 transition-colors" onClick={() => scrollToSection('brands')}>
               브랜드
             </button>
-            <button className="text-gray-700 hover:text-zinc-500 transition-colors">
-              진행 과정
+            <button className="text-gray-700 hover:text-zinc-500 transition-colors" onClick={() => scrollToSection('process')}>
+              프로세스
             </button>
-            <button className="text-gray-700 hover:text-zinc-500 transition-colors">
+            <button className="text-gray-700 hover:text-zinc-500 transition-colors" onClick={() => scrollToSection('portfolio')}>
               포트폴리오
             </button>
-            <button className="text-gray-700 hover:text-zinc-500 transition-colors">
+            <button className="text-gray-700 hover:text-zinc-500 transition-colors" onClick={() => scrollToSection('contact')}>
               문의하기
             </button>
           </nav>
@@ -63,7 +76,7 @@ export default function Header() {
               셰프 카테고리
             </button>
             <button className="block w-full rounded-md px-4 py-2 text-left text-gray-700 hover:bg-gray-100">
-              진행 과정
+              프로세스
             </button>
             <button className="block w-full rounded-md px-4 py-2 text-left text-gray-700 hover:bg-gray-100">
               포트폴리오
