@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 const projects = [
   {
-    title: '삼성전자 신제품 런칭 파티',
-    chef: '김준호 셰프',
+    title: 'AAAA 신제품 런칭 파티',
+    chef: 'AAA 셰프',
     location: '서울 강남',
     rating: 5,
     guests: 200,
@@ -13,8 +13,8 @@ const projects = [
     description: '미슐랭 3스타 셰프의 모던 프렌치 코스 요리',
   },
   {
-    title: '현대백화점 VIP 프라이빗 다이닝',
-    chef: '박서연 셰프',
+    title: 'BB백화점 VIP 프라이빗 다이닝',
+    chef: 'BBB 셰프',
     location: '서울 압구정',
     rating: 5,
     guests: 50,
@@ -24,7 +24,7 @@ const projects = [
   },
   {
     title: '국제 영화제 공식 리셉션',
-    chef: '이동욱 셰프',
+    chef: 'CCC 셰프',
     location: '부산 해운대',
     rating: 5,
     guests: 300,
@@ -34,7 +34,7 @@ const projects = [
   },
   {
     title: '결혼식 프라이빗 셰프 서비스',
-    chef: '최민지 셰프',
+    chef: 'DDD 셰프',
     location: '제주도',
     rating: 5,
     guests: 80,

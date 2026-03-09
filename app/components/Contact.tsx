@@ -41,6 +41,11 @@ export default function Contact() {
     }));
   };
 
+  const callSubmit = () => {
+    alert('📱 010-0000-0000');
+  };
+
+
   return (
     <section id="contact" className="bg-gray-50 py-20 text-gray-900">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -76,7 +81,7 @@ export default function Contact() {
 
                   <div>
                     <p className="mb-1 font-medium">이메일</p>
-                    <p className="text-gray-600">contact@cooc.co.kr</p>
+                    <p className="text-gray-600">no-reply@cooc.agency</p>
                     <p className="text-sm text-gray-500">24시간 이내 답변</p>
                   </div>
                 </div>
@@ -100,7 +105,10 @@ export default function Contact() {
               <p className="mb-4 text-sm text-gray-600">
                 긴급한 문의는 전화로 연락주시면 즉시 상담해드립니다.
               </p>
-              <button className="w-full rounded-lg bg-zinc-600 py-3 text-white transition-colors hover:bg-zinc-700">
+              <button 
+                className="w-full rounded-lg bg-zinc-600 py-3 text-white transition-colors hover:bg-zinc-700"
+                onClick={callSubmit}
+              >
                 전화 상담 신청
               </button>
             </div>

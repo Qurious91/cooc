@@ -1,6 +1,24 @@
+'use client';
+
 import { Instagram, Youtube, Mail } from 'lucide-react';
 
+
 export default function Footer() {
+
+  const clickInstagram = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    alert('https://instagram.com/cooc');
+  };
+  const clickYoutube = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    alert('https://youtube.com/cooc');
+  };
+  const clickMail = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    alert('no-reply@cooc.agency');
+  };
+
+
   return (
     <footer className="bg-zinc-800 py-12 text-zinc-300">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -20,6 +38,7 @@ export default function Footer() {
             <div className="flex gap-4">
               <a
                 href="#"
+                onClick={clickInstagram}
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-zinc-800 transition-colors hover:bg-zinc-600"
               >
                 <Instagram size={20} />
@@ -27,6 +46,7 @@ export default function Footer() {
 
               <a
                 href="#"
+                onClick={clickYoutube}
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-zinc-800 transition-colors hover:bg-zinc-600"
               >
                 <Youtube size={20} />
@@ -34,6 +54,7 @@ export default function Footer() {
 
               <a
                 href="#"
+                onClick={clickMail}
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-zinc-800 transition-colors hover:bg-zinc-600"
               >
                 <Mail size={20} />
@@ -82,7 +103,7 @@ export default function Footer() {
               <li>서울시 강남구 테헤란로 123</li>
               <li>빌딩 10층</li>
               <li>TEL: 02-1234-5678</li>
-              <li>Email: contact@cooc.co.kr</li>
+              <li>Email: no-reply@cooc.agency</li>
             </ul>
           </div>
 
