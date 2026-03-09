@@ -1,13 +1,23 @@
+'use client';
+
 import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
+import { useState } from 'react';
 
 export default function Hero() {
 
-  const scrollToContact = () => {
-    const element = document.getElementById('contact');
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+  const scrollToSection = (id: string) => {
+  const element = document.getElementById(id);
+
+  if (element) {
+    element.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start',
+    });
+
+    setIsMenuOpen(false);
     }
   };
 
@@ -40,8 +50,8 @@ export default function Hero() {
         </p>
 
         <button
-        //   onClick={scrollToContact}
           className="inline-flex items-center gap-2 rounded-full bg-zinc-600 px-8 py-4 text-lg text-white transition-all hover:scale-105 hover:bg-zinc-700"
+          onClick={() => scrollToSection('contact')}
         >
           상담하기
           <ArrowRight size={20} />
