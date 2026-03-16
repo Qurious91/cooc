@@ -31,7 +31,7 @@ export default function BrandRegisterPage() {
         </button>
 
         <div className="bg-card border border-border rounded-2xl p-8 shadow-lg">
-          <div className="flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-r from-blue-500 to-purple-500 mb-6 mx-auto">
+          <div className="flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-r from-blue-400 to-blue-500 mb-6 mx-auto">
             <Building2 className="w-7 h-7 text-white" />
           </div>
 
@@ -91,7 +91,7 @@ export default function BrandRegisterPage() {
 
             <button
               type="submit"
-              className="w-full py-3 rounded-xl bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:opacity-90 transition-opacity cursor-pointer"
+              className="w-full py-3 rounded-xl bg-gradient-to-r from-blue-400 to-blue-500 text-white hover:opacity-90 transition-opacity cursor-pointer"
             >
               브랜드로 등록하기
             </button>
