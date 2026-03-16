@@ -230,7 +230,7 @@ export default function BetaPage() {
                 className="relative p-6 rounded-2xl border border-border hover:shadow-lg transition-shadow"
               >
                 <span
-                  className="text-accent"
+                  className="text-accent dark:text-zinc-100"
                   style={{ fontSize: "3rem", fontWeight: 800 }}
                 >
                   {item.step}
