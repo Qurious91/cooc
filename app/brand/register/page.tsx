@@ -24,10 +24,17 @@ export default function BrandRegisterPage() {
       <div className="w-full max-w-md">
         <button
           onClick={() => router.push("/")}
-          className="flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 cursor-pointer"
+          className="flex items-center gap-2 text-muted-foreground hover:text-foreground mb-1 cursor-pointer"
         >
           <ArrowLeft className="w-4 h-4" />
           홈으로 돌아가기
+        </button>
+        <button
+          onClick={() => router.push("/beta")}
+          className="flex items-center gap-2 text-muted-foreground hover:text-foreground mb-6 cursor-pointer"
+        >
+          <ArrowLeft className="w-4 h-4" />
+          beta로 돌아가기
         </button>
 
         <div className="bg-card border border-border rounded-2xl p-8 shadow-lg">
