@@ -175,7 +175,7 @@ export default function Contact() {
                 />
               </div>
 
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              {/* <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <div>
                   <label
                     htmlFor="eventType"
@@ -235,7 +235,7 @@ export default function Contact() {
                   onChange={handleChange}
                   className="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none focus:border-transparent focus:ring-2 focus:ring-zinc-500"
                 />
-              </div>
+              </div> */}
 
               <div>
                 <label
