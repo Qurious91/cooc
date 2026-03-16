@@ -65,6 +65,7 @@ export default function Header() {
             >
               beta
             </Link>
+
           </nav>
 
           {/* Mobile Menu Button */}
@@ -94,6 +95,14 @@ export default function Header() {
             <button className="block w-full rounded-md px-4 py-2 text-left text-gray-700 hover:bg-gray-100">
               포트폴리오
             </button>
+
+            <Link
+              href="/beta"
+              className={`${greatVibes.className} text-gray-700 hover:text-zinc-500 transition-colors text-xl tracking-wide translate-y-1`}
+            >
+              beta
+            </Link>
+
           </nav>
         )}
       </div>
