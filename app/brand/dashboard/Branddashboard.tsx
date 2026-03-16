@@ -65,7 +65,7 @@ export function BrandDashboard() {
       {/* Top Nav */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-card border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-2 cursor-pointer" onClick={() => router.push("/")}>
+          <div className="flex items-center gap-2 cursor-pointer">
             <div className="text-3xl font-bold text-gray-900 dark:text-white">
               COOC
             </div>
