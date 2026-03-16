@@ -35,12 +35,6 @@ export default function Brands() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-16 text-center">
           <h2 className="mb-4 text-3xl sm:text-4xl md:text-5xl">브랜드</h2>
-
-          <div className="mt-20 mb-10 text-center">
-            <p className="mx-auto max-w-2xl text-lg text-gray-600">
-              COOC 와 함께한 브랜드
-            </p>
-          </div>
         </div>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -71,39 +65,6 @@ export default function Brands() {
           ))}
         </div>
 
-        <div className="mt-20 mb-10 text-center">
-          <p className="mx-auto max-w-2xl text-lg text-gray-600">
-            COOC 와 함께할 브랜드
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
-          {categories.map((category, index) => (
-            <div
-              key={`company-next-${index}`}
-              className="group relative overflow-hidden rounded-2xl bg-gray-100 shadow-md transition-all hover:shadow-2xl"
-            >
-              <div className="relative aspect-[3/4]">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-              </div>
-
-              <div className="absolute right-0 bottom-0 left-0 p-6 text-white">
-                <h3 className="mb-2 text-xl">{category.title}</h3>
-                <p className="mb-3 text-sm text-gray-200">{category.description}</p>
-                <div className="flex flex-wrap gap-2">
-                  {category.specialties.map((specialty, idx) => (
-                    <span
-                      key={idx}
-                      className="rounded-full bg-white/20 px-3 py-1 text-xs backdrop-blur-sm"
-                    >
-                      {specialty}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );

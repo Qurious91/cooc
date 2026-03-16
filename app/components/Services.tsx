@@ -45,7 +45,7 @@ export default function Services() {
                 className="rounded-2xl bg-white p-8 shadow-sm transition-shadow hover:shadow-xl"
               >
                 <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-zinc-100">
-                  <Icon className="text-teal-700" size={28} />
+                  <Icon className="text-zinc-700" size={28} />
                 </div>
 
                 <h3 className="mb-3 text-xl">{service.title}</h3>

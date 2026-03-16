@@ -49,12 +49,12 @@ export default function Process() {
                 )}
 
                 <div className="relative z-10 rounded-2xl bg-white p-8 shadow-sm transition-shadow hover:shadow-xl">
-                  <div className="absolute -top-4 -right-4 flex h-12 w-12 items-center justify-center rounded-full bg-teal-700 text-white">
+                  <div className="absolute -top-4 -right-4 flex h-12 w-12 items-center justify-center rounded-full bg-zinc-700 text-white">
                     {step.step}
                   </div>
 
                   <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-zinc-100">
-                    <Icon className="text-teal-700" size={28} />
+                    <Icon className="text-zinc-700" size={28} />
                   </div>
 
                   <h3 className="mb-3 text-xl">{step.title}</h3>

@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
-import { useRouter } from "next/navigation";
 import { Great_Vibes } from "next/font/google";
 
 const greatVibes = Great_Vibes({
@@ -12,7 +11,6 @@ const greatVibes = Great_Vibes({
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const router = useRouter();
   
   const scrollToSection = (id: string) => {
   const element = document.getElementById(id);
@@ -63,7 +61,7 @@ export default function Header() {
 
             <Link
               href="/beta"
-              className={`${greatVibes.className} text-gray-700 hover:text-zinc-500 transition-colors text-xl tracking-wide`}
+              className={`${greatVibes.className} text-gray-700 hover:text-zinc-500 transition-colors text-xl tracking-wide translate-y-1`}
             >
               beta
             </Link>
@@ -96,16 +94,6 @@ export default function Header() {
             <button className="block w-full rounded-md px-4 py-2 text-left text-gray-700 hover:bg-gray-100">
               포트폴리오
             </button>
-
-            <button
-              className={`${greatVibes.className} italic text-xl tracking-wide text-gray-700 hover:text-zinc-500 transition-colors`}
-             onClick={() => {
-                router.push("/beta");
-                setIsMenuOpen(false);
-              }}>
-                beta
-            </button>
-
           </nav>
         )}
       </div>
