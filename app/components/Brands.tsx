@@ -29,15 +29,33 @@ const categories = [
   },
 ];
 
+const partners = [
+{ name: '서울시', image: '/image/logo1.svg' },
+{ name: '부산시', image: '/image/logo2.svg' },
+{ name: '인천시', image: '/image/logo3.svg' },
+{ name: '경기도', image: '/image/logo4.svg' },
+{ name: '강원도', image: '/image/logo5.svg' },
+{ name: '제주도', image: '/image/logo6.svg' },
+{ name: '서울시1', image: '/image/logo1.svg' },
+{ name: '부산시1', image: '/image/logo2.svg' },
+{ name: '인천시1', image: '/image/logo3.svg' },
+{ name: '경기도1', image: '/image/logo4.svg' },
+{ name: '강원도1', image: '/image/logo5.svg' },
+{ name: '제주도1', image: '/image/logo6.svg' },
+
+];
+
+
 export default function Brands() {
   return (
+    
     <section id="brands" className="bg-white py-20 text-gray-900">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-16 text-center">
           <h2 className="mb-4 text-3xl sm:text-4xl md:text-5xl">브랜드</h2>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+        {/* <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
           {categories.map((category, index) => (
             <div
               key={`company-current-${index}`}
@@ -63,6 +81,24 @@ export default function Brands() {
               </div>
             </div>
           ))}
+        </div> */}
+
+        <div className="mt-20">
+
+          <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-6">
+            {partners.map((partner) => (
+              <div
+                key={partner.name}
+                className="flex items-center justify-center p-6  hover: transition"
+              >
+                <img
+                  src={partner.image}
+                  alt={partner.name}
+                  className="h-10 w-auto object-contain opacity-80 hover:opacity-100"
+                />
+              </div>
+            ))}
+          </div>
         </div>
 
       </div>

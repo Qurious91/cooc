@@ -37,9 +37,6 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden space-x-8 md:flex">
-            <button className="text-gray-700 hover:text-zinc-500 transition-colors" onClick={() => scrollToSection('hero')}>
-              홈
-            </button>
             <button className="text-gray-700 hover:text-zinc-500 transition-colors" onClick={() => scrollToSection('services')}>
               서비스
             </button>
