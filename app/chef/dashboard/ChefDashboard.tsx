@@ -82,7 +82,7 @@ export function ChefDashboard() {
             </div>
             <div
               className={`${greatVibes.className} text-gray-700 hover:text-zinc-500 transition-colors text-xl tracking-wide dark:text-white translate-y-2`}
-              onClick={() => router.push("/beta")}
+              onClick={() => router.push("/chef-matching")}
             >
               beta
             </div>

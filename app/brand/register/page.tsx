@@ -30,7 +30,7 @@ export default function BrandRegisterPage() {
           홈으로 돌아가기
         </button>
         <button
-          onClick={() => router.push("/beta")}
+          onClick={() => router.push("/chef-matching")}
           className="flex items-center gap-2 text-muted-foreground hover:text-foreground mb-6 cursor-pointer"
         >
           <ArrowLeft className="w-4 h-4" />
