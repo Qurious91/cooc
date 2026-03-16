@@ -31,7 +31,7 @@ export default function Header() {
         <div className="flex h-16 items-center justify-between">
           
           {/* Logo */}
-          <div className="text-3xl font-bold text-gray-900">
+          <div className="text-3xl font-bold text-gray-900" onClick={() => scrollToSection('hero')}>
             COOC
           </div>
 
