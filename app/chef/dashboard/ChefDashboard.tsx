@@ -86,7 +86,7 @@ export function ChefDashboard() {
             >
               beta
             </div>
-            <span className="ml-2 px-2 py-0.5 rounded-full bg-orange-100 text-orange-600" style={{ fontSize: "0.7rem", fontWeight: 600 }}>Chef</span>
+            <span className="px-2 py-0.5 rounded-full bg-orange-100 text-orange-600" style={{ fontSize: "0.7rem", fontWeight: 600 }}>Chef</span>
 
           </div>
           <div className="flex items-center gap-4">

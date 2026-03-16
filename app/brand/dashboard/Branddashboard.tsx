@@ -77,7 +77,7 @@ export function BrandDashboard() {
             </div>
 
 
-            <span className="ml-2 px-2 py-0.5 rounded-full bg-blue-100 text-blue-600" style={{ fontSize: "0.7rem", fontWeight: 600 }}>brand</span>
+            <span className="px-2 py-0.5 rounded-full bg-blue-100 text-blue-600" style={{ fontSize: "0.7rem", fontWeight: 600 }}>brand</span>
           </div>
           <div className="flex items-center gap-4">
             <div className="relative">
