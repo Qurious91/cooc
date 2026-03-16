@@ -80,20 +80,26 @@ export default function Header() {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <nav className="space-y-2 py-4 md:hidden">
-            <button className="block w-full rounded-md px-4 py-2 text-left text-gray-700 hover:bg-gray-100">
+            <button className="block w-full rounded-md px-4 py-2 text-left text-gray-700 hover:bg-gray-100" onClick={() => scrollToSection('hero')}>
               홈
             </button>
-            <button className="block w-full rounded-md px-4 py-2 text-left text-gray-700 hover:bg-gray-100">
+            <button className="block w-full rounded-md px-4 py-2 text-left text-gray-700 hover:bg-gray-100" onClick={() => scrollToSection('services')}>
               서비스
             </button>
-            <button className="block w-full rounded-md px-4 py-2 text-left text-gray-700 hover:bg-gray-100">
-              셰프 카테고리
+            <button className="block w-full rounded-md px-4 py-2 text-left text-gray-700 hover:bg-gray-100" onClick={() => scrollToSection('chefs')}>
+              셰프
             </button>
-            <button className="block w-full rounded-md px-4 py-2 text-left text-gray-700 hover:bg-gray-100">
+            <button className="block w-full rounded-md px-4 py-2 text-left text-gray-700 hover:bg-gray-100" onClick={() => scrollToSection('brands')}>
+              브랜드
+            </button>
+            <button className="block w-full rounded-md px-4 py-2 text-left text-gray-700 hover:bg-gray-100" onClick={() => scrollToSection('process')}>
               프로세스
             </button>
-            <button className="block w-full rounded-md px-4 py-2 text-left text-gray-700 hover:bg-gray-100">
+            <button className="block w-full rounded-md px-4 py-2 text-left text-gray-700 hover:bg-gray-100" onClick={() => scrollToSection('portfolio')}>
               포트폴리오
+            </button>
+            <button className="block w-full rounded-md px-4 py-2 text-left text-gray-700 hover:bg-gray-100" onClick={() => scrollToSection('contact')}>
+              문의하기
             </button>
 
             <Link
