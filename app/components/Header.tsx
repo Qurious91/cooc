@@ -61,6 +61,8 @@ export default function Header() {
 
             <Link
               href="/chef-matching"
+              target="_blank"
+              rel="noopener noreferrer"
               className={`${greatVibes.className} text-gray-700 hover:text-zinc-500 transition-colors text-xl tracking-wide translate-y-1`}
             >
               beta
@@ -104,6 +106,8 @@ export default function Header() {
 
             <Link
               href="/chef-matching"
+              target="_blank"
+              rel="noopener noreferrer"
               className={`${greatVibes.className} block w-full rounded-md px-4 py-2 text-left text-gray-700 hover:text-zinc-500 transition-colors text-xl tracking-wide`}
             >
               beta
