@@ -67,7 +67,6 @@ export default function Header() {
             >
               beta
             </Link>
-
           </nav>
 
           {/* Mobile Menu Button */}

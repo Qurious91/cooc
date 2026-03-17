@@ -46,7 +46,7 @@ export default function Hero() {
         </h1>
 
         <p className="mx-auto mb-8 max-w-3xl text-lg text-gray-200 sm:text-xl md:text-2xl">
-          Co-creation with Our Chefs
+          CO-creation with Our Chefs
         </p>
 
         <button
