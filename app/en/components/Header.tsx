@@ -39,25 +39,25 @@ export default function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden space-x-8 md:flex">
             <button className="text-gray-700 hover:text-zinc-500 transition-colors" onClick={() => scrollToSection('hero')}>
-              홈
+              Home
             </button>
             <button className="text-gray-700 hover:text-zinc-500 transition-colors" onClick={() => scrollToSection('services')}>
-              서비스
+              Services
             </button>
             <button className="text-gray-700 hover:text-zinc-500 transition-colors" onClick={() => scrollToSection('chefs')}>
-              셰프
+              Chefs
             </button>
             <button className="text-gray-700 hover:text-zinc-500 transition-colors" onClick={() => scrollToSection('brands')}>
-              브랜드
+              Brands
             </button>
             <button className="text-gray-700 hover:text-zinc-500 transition-colors" onClick={() => scrollToSection('process')}>
-              프로세스
+              Process
             </button>
             <button className="text-gray-700 hover:text-zinc-500 transition-colors" onClick={() => scrollToSection('portfolio')}>
-              포트폴리오
+              Portfolio
             </button>
             <button className="text-gray-700 hover:text-zinc-500 transition-colors" onClick={() => scrollToSection('contact')}>
-              문의하기
+              Contact Us
             </button>
 
             <Link
@@ -115,25 +115,25 @@ export default function Header() {
             </div>
 
             <button className="block w-full rounded-md px-4 py-2 text-left text-gray-700 hover:bg-gray-100" onClick={() => scrollToSection('hero')}>
-              홈
+              Home
             </button>
             <button className="block w-full rounded-md px-4 py-2 text-left text-gray-700 hover:bg-gray-100" onClick={() => scrollToSection('services')}>
-              서비스
+              Services
             </button>
             <button className="block w-full rounded-md px-4 py-2 text-left text-gray-700 hover:bg-gray-100" onClick={() => scrollToSection('chefs')}>
-              셰프
+              Chefs
             </button>
             <button className="block w-full rounded-md px-4 py-2 text-left text-gray-700 hover:bg-gray-100" onClick={() => scrollToSection('brands')}>
-              브랜드
+              Brands
             </button>
             <button className="block w-full rounded-md px-4 py-2 text-left text-gray-700 hover:bg-gray-100" onClick={() => scrollToSection('process')}>
-              프로세스
+              Process
             </button>
             <button className="block w-full rounded-md px-4 py-2 text-left text-gray-700 hover:bg-gray-100" onClick={() => scrollToSection('portfolio')}>
-              포트폴리오
+              Portfolio
             </button>
             <button className="block w-full rounded-md px-4 py-2 text-left text-gray-700 hover:bg-gray-100" onClick={() => scrollToSection('contact')}>
-              문의하기
+              Contact Us
             </button>
 
             <Link
